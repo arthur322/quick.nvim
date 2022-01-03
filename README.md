@@ -1,11 +1,11 @@
-# quick.nvim
+# quick.nvim (Atur's fork)
 
 A very fast Lua based Neovim configuration that uses coc.nvim for intellisense
 
 - [What is this?](#what-is-this)
 - [Plugins](#plugins)
 - [Prerequisites](#prerequisites)
-- [Setup](#setup-quicknvim)
+- [Setup](#setup-quick.nvim)
   - [Download cofiguration](#1-download-configuration)
     - [Releases](#releases)
   - [Install plugins](#2-install-plugins)
@@ -30,7 +30,6 @@ https://user-images.githubusercontent.com/19674362/139526856-bdd9023d-8780-4b0f-
 - [Lualine](https://github.com/nvim-lualine/lualine.nvim)
 - [Packer](https://github.com/wbthomason/packer.nvim)
 - [Plenary](https://github.com/nvim-lua/plenary.nvim)
-- [Surround](https://github.com/blackCauldron7/surround.nvim)
 - [Telescope](https://github.com/nvim-telescope/telescope.nvim)
 - [Tokyo Night](https://github.com/folke/tokyonight.nvim)
 - [Treesitter](https://github.com/nvim-treesitter/nvim-treesitter)
@@ -39,11 +38,15 @@ https://user-images.githubusercontent.com/19674362/139526856-bdd9023d-8780-4b0f-
 - [nvim-ts-context-commentstring](https://github.com/JoosepAlviste/nvim-ts-context-commentstring)
 - [nvim-web-devicons](https://github.com/kyazdani42/nvim-web-devicons)
 - [vim-commentary](https://github.com/tpope/vim-commentary/)
+- [vim-surround](https://github.com/tpope/vim-surround/)
+- [vim-vinegar](https://github.com/tpope/vim-vinegar/)
+- [vim-fugitive](https://github.com/tpope/vim-fugitive/)
 
 ## Prerequisites
 
 - [Neovim 0.5 or above](https://neovim.io)
 - [Node.js](https://nodejs.org)
+- [ripgrep - for Telescope](https://github.com/BurntSushi/ripgrep)
 
 ## Setup quick.nvim
 
@@ -88,6 +91,11 @@ nvim ~/.config/nvim/init.lua
 ```
 :PackerInstall
 ```
+
+If this command not work, comment the lines 1 to 18 in `init.lua`, reopen
+neovim and run the install command. After the installation has completed,
+uncomment these lines and source the `init.lua` file again.
+Souce: [original repo issue #2](https://github.com/albingroen/quick.nvim/issues/2#issuecomment-993147934)
 
 ## coc.nvim
 
@@ -141,6 +149,7 @@ this.
 
 ## Maintainers
 
-<a href="https://github.com/albingroen"> 
-  <img src="https://avatars.githubusercontent.com/u/19674362?v=4" width="80" height="80" />
-</a>
+This is a fork from the original quick.nvim to fit my bindings. Feel free to
+test the original project from [albingroen](https://github.com/albingroen):
+
+[quick.nvim](https://github.com/albingroen/quick.nvim)
